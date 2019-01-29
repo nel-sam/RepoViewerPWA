@@ -1,6 +1,16 @@
+<div id="searchcontrols">
+  <input type="text" value="{{username}}" ng-bind="username" />
+  <button (click)="onSearchButtonClick()">🔍</button>
+</div>
 <ul>
-    <li *ngFor="let repo of repos">
-      {{repo.name}} {{repo.url}}
-    </li>
-  </ul>
-  
+  <li *ngFor="let repo of repos">
+    <div class="repocard">
+      <img src="{{repo.owner.avatar_url}}" />
+      <div>{{repo.name}}</div>
+      <div>by {{repo.owner.login}}</div>
+      <div>{{repo.url}}</div>
+      <div>{{repo.description}}</div>
+      <div>{{repo.fork}}</div>
+    </div>
+  </li>
+</ul>

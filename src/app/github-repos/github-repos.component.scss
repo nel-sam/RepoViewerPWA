@@ -1,0 +1,26 @@
+li {
+    list-style: none;
+}
+
+#searchcontrols {
+    width: 90%;
+    padding: 0px;
+
+    input {
+        width: 75%;
+        height: 40px
+    }
+
+    button {
+        width: 47px;
+        height: 47px;
+    }
+}
+
+.repocard {
+    margin: 30px;
+
+    img {
+        height: 40px;
+    }
+}

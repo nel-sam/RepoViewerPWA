@@ -22,11 +22,29 @@ interface GitHubRepo {
 })
 export class GithubReposComponent implements OnInit {
   repos: GitHubRepo[];
+  username = 'nel-sam';
 
   constructor(private githubService: GithubServiceService) { }
 
   ngOnInit() {
-    this.githubService.getRepos('nel-sam')
+    this.getRepos('nel-sam');
+  }
+
+  public getRepos(username: string) {
+    console.log(username);
+
+    if (username == null || username.length === 0) {
+      return;
+    }
+
+    this.githubService.getRepos(username)
+      .subscribe((data: GitHubRepo[]) => {
+        this.repos = data;
+      });
+  }
+
+  public onSearchButtonClick() {
+    this.githubService.getRepos(this.username)
       .subscribe((data: GitHubRepo[]) => {
         this.repos = data;
       });
