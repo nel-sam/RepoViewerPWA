@@ -1,9 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { GithubServiceService } from '../github-service.service';
 
+interface Owner {
+  login: string;
+  avatar_url: string;
+}
+
 interface GitHubRepo {
   name: string;
   url: string;
+  owner: Owner;
+  description: string;
+  fork: boolean;
 }
 
 
