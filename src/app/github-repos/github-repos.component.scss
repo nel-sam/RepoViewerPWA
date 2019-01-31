@@ -1,5 +1,20 @@
 $avatarBorderColor: #FFFFFF;
 $searchLineHeight: 40px; 
+$primary: #3f51b5;
+$accent: #e74c3c;
+
+.main-container {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.full-width {
+    width: 90%;
+}
 
 a {
     text-decoration: none;
@@ -40,10 +55,20 @@ ul {
     }
 
     .repo-header {           
+        background-image: url('../../assets/images/escheresque_ste.png');
+        border-radius: 5px;
+        padding: 10px;
+        box-shadow: inset 0 2px 1px hsla(0, 0%, .7, .1), inset 0 3px 5px hsla(0, 0%, .1, .1);
+        color: lightgrey;
+
+        mat-card-subtitle {
+            color: grey;
+            font-size: 10px;
+        }
+
         .repo-header-image {
         background-size: cover;
-        border: 4px solid $avatarBorderColor;
-        margin-bottom: -24px;
+        border: 1px solid $accent;
         }
     }
 
@@ -52,4 +77,24 @@ ul {
     }
   }
   
- 
+.language {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: $accent;
+    padding: 10px 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;  
+}
+
+.fork-icon {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    height: auto;
+    width: auto;
+    font-weight: 600;
+    font-size: 20px;
+}

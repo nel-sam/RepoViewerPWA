@@ -3,6 +3,8 @@ import { GithubServiceService } from '../github-service.service';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { MatInputModule } from '@angular/material/input';
+import { FormsModule } from '@angular/forms';
 
 interface Owner {
   login: string;
@@ -14,6 +16,7 @@ interface GitHubRepo {
   url: string;
   owner: Owner;
   description: string;
+  language: string;
   fork: boolean;
 }
 
@@ -25,7 +28,7 @@ interface GitHubRepo {
 })
 export class GithubReposComponent implements OnInit {
   repos: GitHubRepo[];
-  username = 'nel-sam';
+  username: string;
 
   constructor(private githubService: GithubServiceService) { }
 
@@ -34,8 +37,6 @@ export class GithubReposComponent implements OnInit {
   }
 
   public getRepos(username: string) {
-    console.log(username);
-
     if (username == null || username.length === 0) {
       return;
     }
@@ -49,6 +50,7 @@ export class GithubReposComponent implements OnInit {
   public onSearchButtonClick() {
     this.githubService.getRepos(this.username)
       .subscribe((data: GitHubRepo[]) => {
+        console.log(this.username);
         this.repos = data;
       });
   }

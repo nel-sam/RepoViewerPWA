@@ -1,33 +1,33 @@
-<div id="searchcontrols">
-  <input matInput type="text" placeholder="nel-sam" value="{{username}}" ng-bind="username">
-  <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="onSearchButtonClick()">
-    <mat-icon>search</mat-icon>
-  </button>
+<div class="main-container">
+  <div class="searchcontrols">
+    <mat-form-field class="full-width">
+      <input matInput type="text" placeholder="GitHub User" value="{{username}}" [(ngModel)]="username">
+      <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="onSearchButtonClick()">
+        <mat-icon>search</mat-icon>
+      </button>
+    </mat-form-field>
+  </div>
 
-  <!-- <input type="text" value="{{username}}" ng-bind="username" /> -->
-  <button mat-button (click)="onSearchButtonClick()">
-    <i class="material-icons">search</i></button>
+  <ul>
+    <li *ngFor="let repo of repos">
+      <mat-card class="repo-card">
+        <mat-card-header class="repo-header">
+          <div mat-card-avatar class="repo-header-image" [ngStyle]="{'background-image':'url('+repo.owner.avatar_url+')'}"></div>
+          <mat-card-title class="repo-title">
+            <a href="{{repo.url}}">{{repo.name}}</a>
+          </mat-card-title>
+          <mat-card-subtitle>{{repo.owner.login}}</mat-card-subtitle>
+          <div class="language" *ngIf="repo.language !== null">{{repo.language}}</div>
+          <mat-icon class="fork-icon" *ngIf="repo.fork">call_split</mat-icon>
+        </mat-card-header>
+        <mat-card-content class="repo-desc">
+          <p>{{repo.description}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          <button mat-button>SHARE</button>
+        </mat-card-actions>
+      </mat-card>
+    </li>
+  </ul>
 </div>
-
-<ul>
-  <li *ngFor="let repo of repos">
-    <mat-card class="repo-card">
-      <mat-card-header class="repo-header">
-        <div mat-card-avatar class="repo-header-image" [ngStyle]="{ 'background-image': 'url(' + repo.owner.avatar_url + ')'}"></div>
-        <mat-card-title class="repo-title">
-          <a href="{{repo.url}}">{{repo.name}}</a>
-          <mat-icon *ngIf="repo.fork">call_split</mat-icon>
-        </mat-card-title>
-      </mat-card-header>
-      <mat-card-subtitle class="repo-fork">
-      </mat-card-subtitle>
-      <mat-card-content class="repo-desc">
-        <p>{{repo.description}}</p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
-  </li>
-</ul>
