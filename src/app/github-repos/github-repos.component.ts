@@ -4,6 +4,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar'
 import { FormsModule } from '@angular/forms';
 
 interface Owner {
@@ -29,11 +30,16 @@ interface GitHubRepo {
 export class GithubReposComponent implements OnInit {
   repos: GitHubRepo[];
   username: string;
+  darkTheme = true;
 
   constructor(private githubService: GithubServiceService) { }
 
   ngOnInit() {
     this.getRepos('nel-sam');
+  }
+
+  public toggleTheme() {
+    this.darkTheme = !this.darkTheme;
   }
 
   public getRepos(username: string) {

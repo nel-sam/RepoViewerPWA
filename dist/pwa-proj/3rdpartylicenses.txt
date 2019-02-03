@@ -334,6 +334,8 @@ MIT
 
 @angular/material/button
 
+@angular/material/toolbar
+
 @angular/material/form-field
 
 @angular/forms

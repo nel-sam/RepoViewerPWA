@@ -1,12 +1,18 @@
-<div class="main-container">
-  <div class="searchcontrols">
-    <mat-form-field class="full-width">
-      <input matInput type="text" placeholder="GitHub User" value="{{username}}" [(ngModel)]="username">
-      <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="onSearchButtonClick()">
-        <mat-icon>search</mat-icon>
-      </button>
-    </mat-form-field>
-  </div>
+<div [class.my-theme-dark]="darkTheme" [class.my-theme-light]="!darkTheme">
+  <!-- <div class="main-container"> -->
+  <mat-toolbar class="searchcontrols">
+    <mat-toolbar-row>
+      <mat-form-field class="full-width">
+        <input matInput type="text" placeholder="GitHub User" value="{{username}}" [(ngModel)]="username">
+        <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="onSearchButtonClick()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+    </mat-toolbar-row>
+    <mat-toolbar-row>
+      <button mat-button (click)="toggleTheme()">Toggle Theme</button>
+    </mat-toolbar-row>
+  </mat-toolbar>
 
   <ul>
     <li *ngFor="let repo of repos">
@@ -30,4 +36,5 @@
       </mat-card>
     </li>
   </ul>
+  <!-- </div> -->
 </div>
