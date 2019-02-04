@@ -9,7 +9,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.df3708670844dea5c848.js",
+        "/main.01ffb94c3775bf12d983.js",
         "/polyfills.f5ce8ecea387adbb1689.js",
         "/runtime.b57bf819d5bdce77f1c7.js",
         "/styles.95f2aa0752bd67f6c7bb.css"
@@ -29,8 +29,7 @@
         "/assets/icons/icon-512x512.png",
         "/assets/icons/icon-72x72.png",
         "/assets/icons/icon-96x96.png",
-        "/assets/images/escheresque_ste.png",
-        "/escheresque_ste.c32d69c2308cb4267b8b.png"
+        "/assets/images/escheresque_ste.png"
       ],
       "patterns": []
     }
@@ -46,10 +45,9 @@
     "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
     "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
     "/assets/images/escheresque_ste.png": "55deece3236dcc2fb44c28dec3e8bacbb7b46542",
-    "/escheresque_ste.c32d69c2308cb4267b8b.png": "55deece3236dcc2fb44c28dec3e8bacbb7b46542",
     "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "/index.html": "de0c7615a5c8477302001c81403673ba85633b72",
-    "/main.df3708670844dea5c848.js": "0dd1c4cc18bf66e75d9009b5610d23e300db4601",
+    "/index.html": "e1f520926adcab419a242596d780f163f41e7992",
+    "/main.01ffb94c3775bf12d983.js": "f58b53ddaa131307a129071b453bd0ca00c9220a",
     "/polyfills.f5ce8ecea387adbb1689.js": "6946e10a03311677a01490b8e91741668e64e17e",
     "/runtime.b57bf819d5bdce77f1c7.js": "b62956c2192bfe5516d6374e753773901ed50ec5",
     "/styles.95f2aa0752bd67f6c7bb.css": "37ee63450ea7fb84a9bd01e200307d724fa6be01"
