@@ -30,7 +30,7 @@ interface GitHubRepo {
 export class GithubReposComponent implements OnInit {
   repos: GitHubRepo[];
   username: string;
-  darkTheme = true;
+  darkTheme = false;
 
   constructor(private githubService: GithubServiceService) { }
 
