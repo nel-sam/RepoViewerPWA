@@ -3,17 +3,7 @@ $searchLineHeight: 40px;
 $primary: #3f51b5;
 $accent: #e74c3c;
 
-// .main-container {
-//     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
-//     background: #ffffff; /* Old browsers */
-//     background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
-//     background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-//     background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-//     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-// }
-
 .main-container {
-    background: #e5ded8;
     box-sizing: border-box;
 }
 
@@ -56,7 +46,7 @@ ul {
     box-shadow: hsla(0, 0, 0, .2) 0 4px 2px -2px;
     font-family: "adelle-sans", sans-serif;
     font-weight: 100;
-    margin: 48px auto;
+    margin: 22px auto;
     width: 20rem;
     
     @media screen and (min-width: 480px) {
