@@ -1,5 +1,5 @@
 # PwaProj
-A progressive web application (PWA) that makes an http request outntonthe GitHub API and displays a user's public repositories.
+A progressive web application (PWA) that makes an http request out to the GitHub API and displays a user's public repositories.
 
 ## What I learned
 1. How browsers detect that an app is a PWA via the manifest.json file.
