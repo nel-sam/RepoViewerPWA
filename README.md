@@ -1,27 +1,12 @@
 # PwaProj
+A progressive web application (PWA) that makes an http request outntonthe GitHub API and displays a user's public repositories.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## What I learned
+1. How browsers detect that an app is a PWA via the manifest.json file.
+2. How to make a project into a PWA using the Angular CLI command ng add @angular/pwa
+3. How to customize an app's theme in Angular and switch between different themes via a toggle
+ 
+## Previous skills I was able to practice
+1. Angular 7 and Angular CLI
+2. Making http web requests to a REST API from am Angular app
+3. Applying concepts learned from Steve Schoger's Refactoring UI book to implement UI principles such as shadows to create a sleek double-shadow effect using Sass/CSS. 
